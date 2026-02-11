@@ -1,0 +1,23 @@
+{
+  "stats": {
+    "minecraft:custom": {
+      "minecraft:sprint_one_cm": 6553,
+      "minecraft:time_since_rest": 947,
+      "minecraft:walk_one_cm": 678,
+      "minecraft:total_world_time": 1170,
+      "minecraft:fly_one_cm": 21916,
+      "minecraft:mob_kills": 1,
+      "minecraft:play_time": 947,
+      "minecraft:damage_dealt": 320,
+      "minecraft:jump": 63,
+      "minecraft:time_since_death": 947
+    },
+    "minecraft:killed": {
+      "minecraft:camel": 1
+    },
+    "minecraft:used": {
+      "minecraft:netherite_axe": 4
+    }
+  },
+  "DataVersion": 4671
+}

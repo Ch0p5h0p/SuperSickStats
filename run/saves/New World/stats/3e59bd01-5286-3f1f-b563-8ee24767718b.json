@@ -1,0 +1,20 @@
+{
+  "stats": {
+    "minecraft:killed": {
+      "minecraft:rabbit": 1
+    },
+    "minecraft:used": {
+      "minecraft:netherite_axe": 1
+    },
+    "minecraft:custom": {
+      "minecraft:time_since_rest": 300,
+      "minecraft:walk_one_cm": 1134,
+      "minecraft:total_world_time": 333,
+      "minecraft:mob_kills": 1,
+      "minecraft:play_time": 300,
+      "minecraft:damage_dealt": 30,
+      "minecraft:time_since_death": 300
+    }
+  },
+  "DataVersion": 4671
+}

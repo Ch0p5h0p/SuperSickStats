@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "supersickstats",
+  "version": "${version}",
+  "name": "SuperSickStats",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/supersickstats/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "fabric-datagen": [
+      "org.Ch0p5h0p.supersickstats.client.SupersickstatsDataGenerator"
+    ],
+    "client": [
+      "org.Ch0p5h0p.supersickstats.client.SupersickstatsClient"
+    ],
+    "main": [
+      "org.Ch0p5h0p.supersickstats.Supersickstats"
+    ]
+  },
+  "mixins": [
+    "supersickstats.mixins.json",
+    {
+      "config": "supersickstats.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}

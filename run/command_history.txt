@@ -1,0 +1,29 @@
+/gamemode survival
+/enchant @s minecraft:protection 4
+/effect give @s minecraft:resistance infinite 2
+/data get entity @s
+/gamemode creative
+/effect give @s minecraft:resistance infinite 5
+/effect clear
+/give @s netherite_boots
+/enchant @s minecraft:fire_protection 4
+/effect give @s minecraft:resistance 2
+/effect give @s minecraft:resistance 2 2
+/effect give @s minecraft:resistance 2 1
+/time set day
+/give @s netherite_axe
+/data get entity Player276
+/enchant @s minecraft:sharpness 5
+/enchant @s minecraft:efficiency 5
+/give @s netherite_spear
+/effect give @s minecraft:speed infinite 1
+/effect give @s minecraft:speed infinite 2
+/enchant @s minecraft:sharpness 5
+/tick rate 2
+/tick rate 10
+/tick rate 5
+/gamemode survival
+/summon minecraft:zombie
+/summon minecraft:fireball
+/gamemode creative
+/enchant @s lunge 3

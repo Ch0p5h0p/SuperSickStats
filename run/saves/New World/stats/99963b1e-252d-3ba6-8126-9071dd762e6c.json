@@ -1,0 +1,21 @@
+{
+  "stats": {
+    "minecraft:used": {
+      "minecraft:netherite_helmet": 1,
+      "minecraft:netherite_boots": 5,
+      "minecraft:netherite_leggings": 1,
+      "minecraft:netherite_chestplate": 1
+    },
+    "minecraft:custom": {
+      "minecraft:sprint_one_cm": 8102,
+      "minecraft:time_since_rest": 1151,
+      "minecraft:walk_one_cm": 2238,
+      "minecraft:total_world_time": 1230,
+      "minecraft:fly_one_cm": 12664,
+      "minecraft:play_time": 1151,
+      "minecraft:jump": 39,
+      "minecraft:time_since_death": 1151
+    }
+  },
+  "DataVersion": 4671
+}
