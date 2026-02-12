@@ -61,7 +61,7 @@ public class DamageCalculator {
         float total = baseDmg+sharpnessDmg+effectBoost;
         float realTotal = realBase+realSharpness+effectBoost;
         if (chargeDamage>0) chargeDamage += sharpnessDmg;
-        float DPS = (float) (realTotal*p.getAttributeValue(EntityAttributes.ATTACK_SPEED));
+        float DPS = (float) (total*p.getAttributeValue(EntityAttributes.ATTACK_SPEED));
 
 
         return new DamageBreakdown(baseDmg, sharpnessDmg, DPS, effectBoost, chargeDamage, total, realTotal);
