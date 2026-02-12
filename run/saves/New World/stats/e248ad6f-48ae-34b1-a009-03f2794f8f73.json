@@ -1,0 +1,38 @@
+{
+  "stats": {
+    "minecraft:mined": {
+      "minecraft:fire": 1
+    },
+    "minecraft:custom": {
+      "minecraft:time_since_rest": 8048,
+      "minecraft:walk_one_cm": 16690,
+      "minecraft:mob_kills": 2,
+      "minecraft:damage_taken": 69,
+      "minecraft:play_time": 8048,
+      "minecraft:damage_dealt": 410,
+      "minecraft:jump": 185,
+      "minecraft:time_since_death": 8048,
+      "minecraft:sprint_one_cm": 94108,
+      "minecraft:fall_one_cm": 8550,
+      "minecraft:total_world_time": 13509,
+      "minecraft:fly_one_cm": 50781,
+      "minecraft:walk_on_water_one_cm": 227,
+      "minecraft:sneak_time": 3
+    },
+    "minecraft:picked_up": {
+      "minecraft:dirt": 16,
+      "minecraft:poppy": 1,
+      "minecraft:mutton": 1,
+      "minecraft:light_gray_wool": 1,
+      "minecraft:bone": 1
+    },
+    "minecraft:used": {
+      "minecraft:netherite_spear": 4
+    },
+    "minecraft:killed": {
+      "minecraft:skeleton": 1,
+      "minecraft:sheep": 1
+    }
+  },
+  "DataVersion": 4671
+}

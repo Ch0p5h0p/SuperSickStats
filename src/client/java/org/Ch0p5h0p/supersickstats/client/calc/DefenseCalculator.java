@@ -37,7 +37,7 @@ public class DefenseCalculator {
             //System.out.println("!!!!!!!!!!!!!!!!!!!!!!! BLAST PROT ENCHANTMENT FOUND");
             return new ProtectionEnchantment("BLAST", blast);
         }
-        System.out.println("!!!!!!!!!!!!!!!!!!!!!!! NO PROT ENCHANTMENT FOUND");
+        //System.out.println("!!!!!!!!!!!!!!!!!!!!!!! NO PROT ENCHANTMENT FOUND");
         return new ProtectionEnchantment("NONE", 0);
     }
 
