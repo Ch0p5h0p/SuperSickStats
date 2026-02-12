@@ -29,7 +29,7 @@ public class DamageCalculator {
     public static DamageBreakdown calculate(PlayerEntity p) {
         ItemStack stack = p.getMainHandStack();
         String type = WeaponsHelper.getWeaponType(stack);
-        if (type.equals("OTHER")) return new DamageBreakdown(1, 0, 4, 1+ calculateEffects(p), -1, 1, 1+calculateEffects(p));
+        if (type.equals("OTHER")) return new DamageBreakdown(1, 0, 4, 0+ calculateEffects(p), -1, 1, 1+calculateEffects(p));
 
         float baseDmg = WeaponsHelper.getBaseDamage(WeaponsHelper.getMaterial(stack), type);
         int sharpnessLvl = EnchantmentUtil.getLevel(stack, Enchantments.SHARPNESS);
