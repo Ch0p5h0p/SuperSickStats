@@ -1,14 +1,3 @@
-/gamemode survival
-/enchant @s minecraft:protection 4
-/effect give @s minecraft:resistance infinite 2
-/data get entity @s
-/gamemode creative
-/effect give @s minecraft:resistance infinite 5
-/effect clear
-/give @s netherite_boots
-/enchant @s minecraft:fire_protection 4
-/effect give @s minecraft:resistance 2
-/effect give @s minecraft:resistance 2 2
 /effect give @s minecraft:resistance 2 1
 /time set day
 /give @s netherite_axe
@@ -27,3 +16,35 @@
 /summon minecraft:fireball
 /gamemode creative
 /enchant @s lunge 3
+/calcDamage 12
+/calcDamage
+/calcDamage 12
+/calcDamage 1000
+/calcDamage 12
+/calcDamage 0
+/gamemode survival
+/effect give @s minecraft:instant_health infinite 255
+/effect clear
+/effect give @s minecraft:saturation infinite 255 true
+/calcDamage 0
+/calcDamage 1
+/calcDamage 10
+/calcDamage 20
+/calcDamage 80
+/calcDamage 100
+/calcDamage 1000
+/calcDamage 200
+/calcDamage 300
+/calcDamage 255
+/calcDamage 256
+/calcDamage 290
+/calcDamage 270
+/calcDamage 269
+/calcDamage 268
+/calcDamage 267
+/calcDamage 268
+/effect give @s minecraft:speed infinite 2 true
+/give @s minecraft:netherite_spear
+/give @s minecraft:wooden_spear
+/effect give @s minecraft:strength 1 3
+/effect give @s minecraft:strength 5 3

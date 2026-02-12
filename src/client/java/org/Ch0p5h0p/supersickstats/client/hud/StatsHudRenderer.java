@@ -81,7 +81,8 @@ public abstract class StatsHudRenderer implements HudElement {
                 attackPanelTemp.add(String.format("HIT DAMAGE: %.2f (CRIT: %.2f)",dmg.total, dmg.total*1.5));
                 attackPanelTemp.add(String.format("IDEAL DPS: %.2f (CRIT: %.2f)", dmg.DPS, dmg.DPS*1.5));
                 attackPanelTemp.add(String.format("REAL DPS: %.2f", DamageTracker.computeDps()));
-                attackPanelTemp.add(String.format("BASE: %.2f SHARPNESS: %.2f", dmg.base, dmg.enchantment));
+                attackPanelTemp.add(String.format("BASE: %.2f SHARPNESS: +%.2f", dmg.base, dmg.enchantment));
+                attackPanelTemp.add(String.format("EFFECT MODIFIER: %s%.2f", ((dmg.effect)>=0 ? "+" : "-"), dmg.effect));
 
                 if (dmg.chargeDamage >= 0) {
                     attackPanelTemp.add(String.format("CHARGE DAMAGE: %.2f", dmg.chargeDamage));
@@ -92,7 +93,8 @@ public abstract class StatsHudRenderer implements HudElement {
                         0xFF55FF55,
                         0xFF55FF55,
                         0xFFFFFFFF,
-                        0xFFFF55FF
+                        0xFFFF55FF,
+                        0xFFFFAA00
                 };
 
                 String[] attackPanel = attackPanelTemp.toArray(new String[0]);

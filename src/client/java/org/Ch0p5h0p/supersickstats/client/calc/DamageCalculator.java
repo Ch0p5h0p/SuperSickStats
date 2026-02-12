@@ -29,7 +29,7 @@ public class DamageCalculator {
     public static DamageBreakdown calculate(PlayerEntity p) {
         ItemStack stack = p.getMainHandStack();
         String type = WeaponsHelper.getWeaponType(stack);
-        if (type.equals("OTHER")) return new DamageBreakdown(1, 0, 4, 1+ calculateEffects(p), -1, 1);
+        if (type.equals("OTHER")) return new DamageBreakdown(1, 0, 4, 1+ calculateEffects(p), -1, 1, 1+calculateEffects(p));
 
         float baseDmg = WeaponsHelper.getBaseDamage(WeaponsHelper.getMaterial(stack), type);
         int sharpnessLvl = EnchantmentUtil.getLevel(stack, Enchantments.SHARPNESS);
@@ -49,16 +49,21 @@ public class DamageCalculator {
             chargeDamage = WeaponsHelper.calcSpearChargeDamage(p, stack);
         }
 
+        float realBase = baseDmg;
+        float realSharpness = sharpnessDmg;
+
         if (p.handSwingProgress > 0) {
-            baseDmg *= (float) (0.2+(0.8*(Math.pow(p.handSwingProgress, 2))));
-            sharpnessDmg *= p.handSwingProgress;
+            realBase *= (float) (0.2+(0.8*(Math.pow(p.handSwingProgress, 2))));
+            realSharpness *= p.handSwingProgress;
         }
 
 
-        float total = baseDmg+sharpnessDmg;
-        float DPS = (float) (total*p.getAttributeValue(EntityAttributes.ATTACK_SPEED));
+        float total = baseDmg+sharpnessDmg+effectBoost;
+        float realTotal = realBase+realSharpness+effectBoost;
+        if (chargeDamage>0) chargeDamage += sharpnessDmg;
+        float DPS = (float) (realTotal*p.getAttributeValue(EntityAttributes.ATTACK_SPEED));
 
 
-        return new DamageBreakdown(baseDmg, sharpnessDmg, DPS, effectBoost, chargeDamage, total);
+        return new DamageBreakdown(baseDmg, sharpnessDmg, DPS, effectBoost, chargeDamage, total, realTotal);
     }
 }

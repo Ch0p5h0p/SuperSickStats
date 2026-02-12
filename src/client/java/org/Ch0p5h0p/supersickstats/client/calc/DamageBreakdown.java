@@ -7,12 +7,14 @@ public class DamageBreakdown {
     public final float effect;
     public final float chargeDamage;
     public final float total;
-    public DamageBreakdown(float base, float enchantment, float DPS, float effect, float chargeDamage, float total) {
+    public final float realTotal;
+    public DamageBreakdown(float base, float enchantment, float DPS, float effect, float chargeDamage, float total, float realTotal) {
         this.base = base;
         this.enchantment = enchantment;
         this.DPS = DPS;
         this.effect = effect;
         this.chargeDamage = chargeDamage;
         this.total = total;
+        this.realTotal = realTotal;
     }
 }
